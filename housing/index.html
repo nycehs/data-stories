@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Corrects IE Compatibility Mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Health, housing, and history</title>
+
+    <!--
+    CSS is all hosted by the Core-Repo. Links will need to be updated for each project once merged or deployed.
+    This is also the case for main.js further below.
+    -->
+
+    <!--Fontawesome Icons-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/fontawesome/css/all.min.css">
+    <!--NYC Core Framework Theme-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/theme.css">
+    <!--Custom additions for Portal items-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/custom.css">
+
+
+    <!--Custom data story CSS-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/datastories.css">
+    <link rel="stylesheet" href="housing.css">
+
+    <!--Google Analytics script - use only on Production-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28636785-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28636785-1');
+    </script>
+
+</head>
+
+
+
+<body>
+
+    <!-- For keyboard users -->
+    <a class="sr-only sr-only-focusable skip-menu" href="#sidebar">Skip Header</a>
+
+    <header id="global-header" role="banner">
+
+        <div class="bg-black text-white" id="nyc-top-header">
+
+            <div class="container-fluid wide">
+
+                <div class="row py-1 align-items-center justify-content-between">
+
+                    <div class="col-auto">
+                        <p class="d-none d-md-flex fs-md">
+                            <a class="text-reset" href="https://www1.nyc.gov/">
+                                <strong>nyc.gov</strong>
+                            </a>
+
+                        </p>
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-auto">
+
+                        <ul class="extensible-list horizontal fs-md">
+                            <li>
+                                <a class="text-reset" href="https://www1.nyc.gov/site/doh/index.page">
+                                    <strong>Department of Health</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www1.nyc.gov/" title="Go to nyc.gov">
+                                    <img class="d-block"
+                                        src="https://nycehs.github.io/Portal-Core-Repo/images/nyc-bubble-logo.svg"
+                                        width="45" alt="NYC Logo">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+
+            </div>
+            <!-- .container-fluid -->
+
+        </div>
+        <!-- #nyc-top-header -->
+
+        <div class="wrap-header">
+
+            <div class="container-fluid">
+
+                <div class="row align-items-center">
+
+
+                    <!-- .col -->
+
+                    <div class="col border-top">
+
+                        <div class="align-items-center justify-content-between">
+
+                            <!-- Mobile Toggle Buttons -->
+
+                            <ul class="extensible-list horizontal justify-content-between my-2">
+                                <li><a href="/IndicatorPublic/Infographic.aspx">
+                                        <button class="no-btn-style mr-auto" type="button">
+                                            <i class="fas fa-arrow-circle-left"></i>&nbsp;back to data stories
+                                        </button></a>
+                                </li>
+
+                                <li>
+                                    <button class="no-btn-style float-right" type="button" data-toggle="collapse"
+                                        data-target="#global-language" aria-controls="global-language"
+                                        aria-expanded="false">
+                                        <span class="fas fa-language fa-lg"></span>
+                                    </button>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                        <!-- .d-flex -->
+
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+
+            </div>
+            <!-- .container-fluid -->
+
+        </div>
+        <!-- .wrap-header -->
+
+        <div class="container-fluid border-top collapse" id="global-language">
+            <div class="narrow py-2">
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid border-top collapse" id="global-search">
+            <form class="narrow py-2" aria-label="Search" role="search">
+                <div class="input-group">
+                    <label class="sr-only" for="global-search-bar">Search</label>
+                    <input class="form-control form-control-lg" id="global-search-bar" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary btn-lg" type="button" title="Search">
+                            <span class="sr-only">Search</span>
+                            <span class="fas fa-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </header>
+    <!-- #global-header -->
+
+
+    <body class="scrollspy-container" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+        <main role="main">
+
+            <!-- Add your custom image class below (replace 'oculus' with your own custom class) -->
+            <div class="bg-primary d-flex flex-column titleslide"
+                style="height: 300px; background-image: URL(title1.jpg)">
+
+                <div class="container-fluid my-auto">
+                    <div class="medium my-3 text-left">
+                        <h1 class="display-4 titleheader py-3">Health, housing, and history</h1>
+                    </div>
+                </div>
+                <!-- .container -->
+
+                <!-- Toggle #main-nav on mobile. Comment this out if there are no chapters -->
+                <div class="container-fluid d-xl-none d-lg-none">
+                    <div class="narrow">
+                        <div class="btn-toggle narrow">
+                            <button class="btn btn-block btn-lg btn-primary shadow" data-toggle="collapse"
+                                data-target="#main-nav" aria-expanded="false" aria-controls="sidebar-nav">
+                                <span class="title">Contents</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--#main-nav - comment this out if there are no chapters-->
+
+
+            <div class="sticky-top container-fluid collapse d-lg-block px-0 border-lg-top border-lg-bottom"
+                id="main-nav" style="background-color:white;">
+
+                <h2 class="sr-only">
+                    Primary Navigation
+                </h2>
+
+                <div class="wide">
+
+                    <nav class="nav nav-pills" role="navigation" id="myScrollspy">
+
+                        <!-- .nav-item -->
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link active" href="#section1" id="nav-item-01" role="button">
+                                Intro & background
+                            </a>
+
+
+                        </div>
+                        <!-- .nav-item -->
+
+                        <div class="nav-item mx-auto">
+                            <a class="nav-link" role="button">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link" href="#section2" id="nav-item-02" role="button">
+                                Redlining
+                            </a>
+
+
+                        </div>
+
+                        <div class="nav-item mx-auto">
+                            <a class="nav-link" role="button">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+
+
+                        <!-- .nav-item -->
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link" href="#section3" id="nav-item-03" role="button">Segregation
+                            </a>
+                        </div>
+
+                        <div class="nav-item mx-auto">
+                            <a class="nav-link" role="button">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- .nav-item -->
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link" href="#section4" id="nav-item-04" role="button">Disrepair
+                            </a>
+                        </div>
+                        <!-- .nav-item -->
+                        <div class="nav-item mx-auto">
+                            <a class="nav-link" role="button">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link" href="#section5" id="nav-item-05" role="button">Disparities
+                            </a>
+                        </div>
+                        <!-- .nav-item -->
+
+                    </nav>
+
+                </div>
+                <!-- .wide -->
+
+            </div>
+            <!--end all navigation-->
+
+
+
+            <div class="container-fluid fs-rg" id="skip-header-target" style="background-color: #f8f8f8;">
+
+
+                <!--commenting out template code
+<br><br><br><br>
+
+
+<div class="row no-gutters">
+    <div class="col-lg-8 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2>Red card title</h2></div>
+            <div class="row no-gutters">
+                <div class="col-6 pl-2">Left column</div>
+                <div class="col-6">Right column</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+
+<div class="row no-gutters">
+    <div class="col-lg-8 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2>Red card title</h2></div>
+            <div class="row no-gutters">
+                <div class="col-12 px-2">Single column</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<br><br><br><br>
+-->
+
+
+
+
+
+                <div class="row no-gutters">
+                    <div class="col-lg-8 mx-auto mt-4">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2 id="section1" class="storyanchor">For health, place matters.</h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 px-2">
+                                    <p>What determines whether or not you’re healthy? You may think about what you eat,
+                                        whether you exercise, whether you smoke and your family medical history.
+                                    </p>
+                                    <p>But you may not think about <a href="#healthcollapse" data-toggle="collapse"
+                                            class="badge badge-pill badge-success">how your home affects your health</a>
+                                        - and you may not think about the factors that influence where you live.
+                                    </p>
+
+                                    <div class="collapse fs-sm py-2 px-2 mb-2" id="healthcollapse"
+                                        style="background-color: #f9f9f9;">
+                                        <P>For a home to be healthy, it should be free of:
+                                        <ul>
+                                            <li>Cracks</li>
+                                            <li>Holes</li>
+                                            <li>Leaks</li>
+                                            <li>Smoke</li>
+                                            <li>Pests</li>
+                                            <li>Old, peeling paint</li>
+                                        </ul>
+                                        <p>In other words, a healthy home is a well-maintained home.</p>
+                                    </div>
+
+
+                                    <h3>But some buildings aren't healthy places to live.</h3>
+                                    <p>Buildings with maintenance issues and disrepair can harm health. Across NYC,
+                                        low-income neighborhoods have a higher percentage of buildings in disrepair –
+                                        and Black and Latino people have less access to healthy housing.
+                                    </p>
+                                    <p>Today’s inequality can be traced to a history of racism and neglect: a practice
+                                        known as redlining resulted in segregation which, in turn, drove housing
+                                        disrepair and led to these health disparities.
+                                    </p>
+                                    <p>Let's explore how.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2>Racism has determined where people live since colonial times.</h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-lg-6 pl-2">
+                                    <p>Racism has always played a role in residential patterns in New York City. When
+                                        New York City was a Dutch colony, it was just the southern tip of Manhattan.
+                                        Wall Street got its name from the city’s protective wall.</p>
+                                    <p>In 1661, when Black people petitioned the colony for land in the area, they were
+                                        given land north of the wall, outside of the city proper.</p>
+                                    <p>Throughout history, many different practices have shaped racial and residential
+                                        patterns in New York City. In the 20th century, a practice called redlining made
+                                        racism a federal policy – with long-lasting repercussions for our housing and
+                                        our health.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="images/colony.png" alt="A 17th-century map of New York City">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-7 mx-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2 id="section2" class="storyanchor">Federal policy drove residential segregation.</h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 px-2">
+                                    <p>In the 1930s, <a href="#holccollapse" data-toggle="collapse"
+                                            class="badge badge-pill badge-success">the federal government</a> developed
+                                        color-coded maps to guide loans to potential home buyers in cities across the
+                                        U.S.
+
+                                    <div class="collapse fs-sm py-2 px-2 mb-2" id="holccollapse"
+                                        style="background-color: #f9f9f9;">
+                                        <p>In the 1930s, the Great Depression caused a wave of foreclosures throughout
+                                            the country. Unemployment rates were high and many people couldn't make
+                                            mortgage payments. To help keep people in their homes, the federal
+                                            government established the Home Owners Loan Corporation (HOLC). Its goal was
+                                            to refinance mortgages with better terms – less interest and a longer
+                                            repayment times. This would help people make payments and avoid foreclosure.
+                                        </p>
+                                        <p>However, to determine what loans they could safely guarantee, HOLC sent
+                                            people to appraise neighborhoods in cities across the USA, and generated the
+                                            discriminatory redlining maps that would guide the real estate industry for
+                                            decades. </p>
+                                    </div>
+
+                                    <p>On these color-coded maps, neighborhoods were divided into 4 categories:
+                                    <ul style="list-style:none;">
+                                        <li><strong><span style="color:#4FCF23"><i
+                                                        class="fas fa-square-full"></i></span> Best</strong></li>
+                                        <li><strong><span style="color:rgb(136, 145, 218)"><i
+                                                        class="fas fa-square-full"></i></span> Still desirable</strong>
+                                        </li>
+                                        <li><strong><span style="color:#e4eb83"><i
+                                                        class="fas fa-square-full"></i></span> Definitely
+                                                declining</strong></li>
+                                        <li><strong><span style="color:#DF0E0E"><i
+                                                        class="fas fa-square-full"></i></span> Hazardous</strong></li>
+                                    </ul>
+
+                                    This classification was clearly rooted in racism, since neighborhood descriptions
+                                    included statements like:
+                                    <div class="quote my-2 py-2"><em>"Detrimental influences: Infiltration of Negroes.
+                                            Mixed races."</em></div>
+                                    The government denied loans to Black and Latino people trying to buy homes in
+                                    redlined neighborhoods. Instead, these resources went to new White-only suburban
+                                    communities. </p>
+
+                                    <p>The map below shows how New York City's neighborhoods were categorized.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-9 mx-auto">
+                        <iframe src="HOLC_map/HOLC_map.html" scrolling="no" frameborder="0"
+                            style="position: relative; height: 600px; width: 100%;"></iframe>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+
+                <div class="row no-gutters">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6 mr-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2 id="section3" class="storyanchor">This was redlining. </h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 px-2">
+                                    <p>This process became known as "redlining:" systematically denying public and
+                                        private resources based on where people live, targeting people of color.</p>
+                                    <p>Redlining helped drive urban segregation in the 20th century, as new
+                                        neighborhoods were built for white people while people of color were forced into
+                                        neighborhoods declared to be "declining." </p>
+                                    <p>Since homeownership is an important way to accrue wealth, redlining drove
+                                        economic inequality, too - by denying people of color the same opportunities for
+                                        home ownership that white people had. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-6 ml-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2>Other discriminatory practices maintain segregation.</h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 px-2">
+                                    <p>Other real estate practices, like
+                                        <a href="#bbcollapse" data-toggle="collapse"
+                                            class="badge badge-pill badge-success">Blockbusting</a>&nbsp;<a
+                                            href="#contractcollapse" data-toggle="collapse"
+                                            class="badge badge-pill badge-success">Contract selling</a> &nbsp;<a
+                                            href="#rrccollapse" data-toggle="collapse"
+                                            class="badge badge-pill badge-success">Racially restrictive covenants</a>,
+                                        have maintained segregation.
+
+                                    <div class="collapse fs-sm py-2 px-2 mb-2" id="bbcollapse"
+                                        style="margin-top: 0px!important; background-color: #f9f9f9;">
+                                        <p><strong>Blockbusting</strong> was a practice used by real estate agents.
+                                            Since many white people viewed people of color as a social and economic
+                                            threat to their neighborhoods, agents would tell white homeowners that
+                                            people of color were about to move into the neighborhood. </p>
+                                        <p>This would convince homeowners that their house's value would fall - and they
+                                            would sell for a lower price. Real estate agents would then turn around and
+                                            sell property to people of color for inflated prices.</p>
+                                    </div>
+                                    <div class="collapse fs-sm py-2 px-2 mb-2" id="contractcollapse"
+                                        style="background-color: #f9f9f9;">
+                                        <p><strong>Contract selling</strong> was a deceptive and exploitative real
+                                            estate practice that targeted people of color with private loans to buy
+                                            homes. These loans often had high interests rates and manipulative terms -
+                                            in some cases, forcing the buyer to give up their home if they missed even
+                                            one loan payment. </p>
+                                        <p>These contracts often made people responsible for paying back far more money
+                                            than the house they bought was worth. </p>
+                                    </div>
+                                    <div class="collapse fs-sm py-2 px-2 mb-2" id="rrccollapse"
+                                        style="background-color: #f9f9f9;">
+                                        <p>A <strong>racially-restrictive covenant</strong> is a clause in the deed for
+                                            a property that prevents the owner from selling the property to people of
+                                            color.</p>
+                                        <p>Racially-restrictive covenants were a way to enforce residential segregation,
+                                            to ensure that people of color were kept out of white neighborhoods. </p>
+                                    </div>
+                                    <p>Today, housing advocates say that some landlords continue discriminatory
+                                        practices, describing one landlord’s behavior this way:</p>
+                                    <div class="quote my-2 py-2"><em>“This landlord has a pattern of buying old, worn
+                                            out buildings in working class neighborhoods of color; letting the
+                                            apartments of long-term tenants fall into disrepair; and making them wait
+                                            months for low-quality repairs. Many tenants also say that this landlord
+                                            gives preferential treatment to new tenants.” </em> </div>
+                                    <div class="text-right mb-3">-from the <a
+                                            href="https://www.worstevictorsnyc.org/evictors-list/">Right to Counsel NYC
+                                            Coalition: Worst Evictor's List</a></div>
+                                    <p>These practices continue a legacy of housing racism, maintain residential
+                                        segregation and, over time, result in <strong>disinvestment</strong>: when
+                                        neighborhoods are deprived of resources that their residents need for health and
+                                        opportunity.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-7 mx-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2 id="section4" class="storyanchor">Disinvestment led to housing disrepair.</h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 px-2">
+                                    <p>Throughout the 20th century, redlined neighborhoods deteriorated as they were
+                                        deprived of private investment and government resources. </p>
+                                    <p>Landlords in these neighborhoods are less likely to adequately maintain homes. As
+                                        a result, many homes have severe and chronic maintenance problems. </p>
+                                    <P>Explore NYC's common housing problems in the map below.</P>
+                                    <h2 class="text-center mt-3"><i class="fas fa-arrow-circle-down"></i></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+
+                <!--comment out singlemap with dropdown chooser
+<div class="row no-gutters">
+    <div class="col-lg-10 mx-auto" style="background-color: #ffffff; padding: 15px;">
+        <iframe src="map/puma-housing.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
+    </div>
+
+</div>
+-->
+
+
+
+                <div class="row no-gutters">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="redcard">
+                            <h4 class="redcard-title">Percent of households with healthy housing problems:</h4>
+
+                            <div class="btn-toggle narrow d-xl-none d-lg-none">
+                                <button class="btn btn-block btn-md btn-primary" data-toggle="modal"
+                                    data-target="#mapmodal" aria-expanded="false" aria-controls="map-choose">
+                                    <span class="title">Select data to map:</span>
+                                </button>
+                            </div>
+
+                            <!-- Map modal -->
+                            <div class="modal fade" id="mapmodal" tabindex="-1" role="dialog"
+                                aria-labelledby="mapmodaltitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="mapmodaltitle">Select data to map</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body fs-sm">
+                                            <a class="nav-link" id="three-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#three" role="tab" aria-controls="three"
+                                                aria-selected="false"><strong>3+ healthy housing problems</strong></a>
+                                            <a class="nav-link" id="none-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#none" role="tab" aria-controls="none"
+                                                aria-selected="false"><strong>No healthy housing problems</strong></a>
+                                            <br>
+                                            <em class="pl-2">Healthy housing problems:</em>
+                                            <a class="nav-link" id="roaches-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#roaches" role="tab" aria-controls="roaches"
+                                                aria-selected="false">Cockroaches</a>
+                                            <a class="nav-link" id="rodents-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#rodents" role="tab" aria-controls="rodents"
+                                                aria-selected="false">Mice and rats</a>
+                                            <a class="nav-link" id="cracks-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#cracks" role="tab" aria-controls="cracks"
+                                                aria-selected="false">Cracks and holes in walls</a>
+                                            <a class="nav-link" id="water-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#water" role="tab" aria-controls="water"
+                                                aria-selected="false">Water leaks</a>
+                                            <a class="nav-link" id="broken-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#broken" role="tab" aria-controls="broken"
+                                                aria-selected="false">Broken plaster, peeling paint</a>
+
+                                            <a class="nav-link" id="heat-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#heat" role="tab" aria-controls="heat" aria-selected="true">Heat
+                                                breakdown</a>
+                                            <a class="nav-link" id="heat2-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#heat2" role="tab" aria-controls="heat2"
+                                                aria-selected="false">Supplemental heat</a>
+                                            <a class="nav-link" id="ac-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#ac" role="tab" aria-controls="ac" aria-selected="false">No air
+                                                conditioning</a>
+                                            <a class="nav-link" id="toilet-tab" data-toggle="pill" data-dismiss="modal"
+                                                href="#toilet" role="tab" aria-controls="toilet"
+                                                aria-selected="false">Toilet breakdowns</a>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row no-gutters" style="margin-bottom:0px!important;">
+
+                                <div class="col-md-3 fs-sm collapse d-lg-block" style="margin-top:0px!important;">
+
+                                    <div class="nav flex-column nav-pills" id="tab" role="tablist"
+                                        aria-orientation="vertical">
+
+
+                                        <a class="nav-link active" id="three-tab" data-toggle="pill" href="#three"
+                                            role="tab" aria-controls="three" aria-selected="false"><strong>3+ healthy
+                                                housing problems</strong></a>
+                                        <a class="nav-link" id="none-tab" data-toggle="pill" href="#none" role="tab"
+                                            aria-controls="none" aria-selected="false"><strong>No healthy housing
+                                                problems</strong></a>
+                                        <br>
+                                        <em class="pl-2">Healthy housing problems:</em>
+                                        <a class="nav-link" id="roaches-tab" data-toggle="pill" href="#roaches"
+                                            role="tab" aria-controls="roaches" aria-selected="false">Cockroaches</a>
+                                        <a class="nav-link" id="rodents-tab" data-toggle="pill" href="#rodents"
+                                            role="tab" aria-controls="rodents" aria-selected="false">Mice and rats</a>
+                                        <a class="nav-link" id="cracks-tab" data-toggle="pill" href="#cracks" role="tab"
+                                            aria-controls="cracks" aria-selected="false">Cracks and holes in walls</a>
+                                        <a class="nav-link" id="water-tab" data-toggle="pill" href="#water" role="tab"
+                                            aria-controls="water" aria-selected="false">Water leaks</a>
+                                        <a class="nav-link" id="broken-tab" data-toggle="pill" href="#broken" role="tab"
+                                            aria-controls="broken" aria-selected="false">Broken plaster, peeling
+                                            paint</a>
+
+                                        <a class="nav-link" id="heat-tab" data-toggle="pill" href="#heat" role="tab"
+                                            aria-controls="heat" aria-selected="true">Heat breakdown</a>
+                                        <a class="nav-link" id="heat2-tab" data-toggle="pill" href="#heat2" role="tab"
+                                            aria-controls="heat2" aria-selected="false">Supplemental heat</a>
+                                        <a class="nav-link" id="ac-tab" data-toggle="pill" href="#ac" role="tab"
+                                            aria-controls="ac" aria-selected="false">No air conditioning</a>
+                                        <a class="nav-link" id="toilet-tab" data-toggle="pill" href="#toilet" role="tab"
+                                            aria-controls="toilet" aria-selected="false">Toilet breakdowns</a>
+                                    </div>
+                                </div>
+
+
+                                <script>
+                                    function setdMapContainerHeight() {
+                                        // set variables for the two elements
+                                        var iframeContainer = document.querySelector('#tabContent');
+                                        var innerMapContainer = document.querySelector('#tabContent > html');
+
+                                        //get height value of innerMap
+                                        var mapRect = innerMapContainer.getBoundingClientRect();
+                                        var mapHeight = mapRect.height;
+                                        var mapHeightString = mapHeight.toString();
+                                        var styleHeight = mapHeightString + 'px';
+                                        //set height of iframe as map height
+                                        iframeContainer.style.height = styleHeight;
+                                    }
+
+                                    // set map height on initial load;
+                                    document.addEventListener('DOMContentLoaded', setMapContainerHeight);
+                                    // add event handler on the window resize event, and attach map height function.
+                                    document.addEventListener('resize', setMapContainerHeight);
+                                </script>
+
+                                <div class="col-md-9">
+                                    <div class="tab-content" id="tabContent"
+                                        style="height: 95vmin; background-color: #ffffff;">
+
+                                        <div class="tab-pane fade  show active" id="three" role="tabpanel"
+                                            aria-labelledby="three-tab" style="height: 100%;">
+                                            <iframe src="map/three.html" scrolling="no" frameborder="0"
+                                                style="position: relative; height: 100%; width: 100%;"></iframe>
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="none" role="tabpanel" aria-labelledby="none-tab"
+                                            style="height: 100%;">
+                                            <iframe src="map/none.html" scrolling="no" frameborder="0"
+                                                style="position: relative;  height: 100%;width: 100%;"></iframe>
+
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="heat" role="tabpanel" aria-labelledby="heat-tab"
+                                            style="height: 100%;">
+                                            <iframe src="map/breakdown.html" scrolling="no" frameborder="0"
+                                                style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+
+
+                                        <div class="tab-pane fade" id="heat2" role="tabpanel"
+                                            aria-labelledby="heat2-tab" style="height: 100%;">
+                                            <iframe src="map/supplemental.html" scrolling="no" frameborder="0"
+                                                style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="rodents" role="tabpanel"
+                                            aria-labelledby="rodents-tab" style="height: 100%;">
+                                            <iframe src="map/micerats.html" scrolling="no" frameborder="0"
+                                                style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="cracks" role="tabpanel"
+                                            aria-labelledby="cracks-tab" style="height: 100%;">
+                                            <iframe src="map/cracks.html" scrolling="no" frameborder="0"
+                                                style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="broken" role="tabpanel"
+                                            aria-labelledby="broken-tab" style="height: 100%;">
+
+                                            <iframe src="map/broken.html" scrolling="no" frameborder="0"
+                                                style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="toilet" role="tabpanel"
+                                            aria-labelledby="toilet-tab" style="height: 100%;">
+
+                                            <iframe src="map/toilet.html" scrolling="no" frameborder="0"
+                                                style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="water" role="tabpanel"
+                                            aria-labelledby="water-tab" style="height: 100%;">
+
+                                            <iframe src="map/water.html" scrolling="no" frameborder="0"
+                                                style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="ac" role="tabpanel" aria-labelledby="ac-tab"
+                                            style="height: 100%;">
+
+                                            <iframe src="map/noac.html" scrolling="no" frameborder="0"
+                                                style="position: relative;  height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="roaches" role="tabpanel"
+                                            aria-labelledby="roaches-tab" style="height: 100%;">
+
+                                            <iframe src="map/cockroaches.html" scrolling="no" frameborder="0"
+                                                style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <button type="button" class="btn btn-med float-right btn-light" data-toggle="modal"
+                            data-target="#hvsModal">Get the data</button>
+
+                    </div>
+
+
+                </div>
+
+                <!-- HVS Modal -->
+                <div class="modal fade" id="hvsModal" tabindex="-1" role="dialog" aria-labelledby="hvsModalTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="hvsModalTitle">Get the data: Housing and Vacancy Survey</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Data on housing maintenance conditions come from the <a
+                                        href="https://www.census.gov/programs-surveys/nychvs.html">2017 Housing and
+                                        Vancancy Survey</a>. Explore more data from the HVS at the <a
+                                        href="/IndicatorPublic/Subtopic.aspx?theme_code=1,4&subtopic_id=36">Environment
+                                        & Health Data Portal: Housing</a>.</p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+
+                <div class="row no-gutters">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2>Who shoulders the burden of housing disrepair?</h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 px-2">
+                                    <p>These problems go far beyond inconvenience or mess. <a href="#disrepaircollapse"
+                                            data-toggle="collapse" class="badge badge-pill badge-success">Disrepair can
+                                            harm health.</a></p>
+
+                                    <div class="collapse fs-sm py-2 px-2 mb-2" id="disrepaircollapse"
+                                        style="background-color: #f9f9f9;">
+                                        <p>Healthy housing problems - like maintenance deficiencies and general
+                                            disrepair - are associated with many adverse health outcomes.
+                                        <ul>
+                                            <li>General disrepair is associated with anxiety and depression.</li>
+                                            <li>Some forms, like <strong>broken plaster and peeling paint</strong>, or
+                                                <strong>cracks and holes in interior walls</strong>, can <a
+                                                    href="/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=14">expose
+                                                    children to lead paint</a>.
+                                            </li>
+                                            <li><strong>Water leaks</strong>, broken windows, or <strong>toilet
+                                                    breakdowns</strong> can introduce mold - which triggers allergies,
+                                                <a
+                                                    href="/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=11">asthma</a>,
+                                                and can make chronic conditions worse.
+                                            </li>
+                                            <li>Pests, like <strong>cockroaches, mice, and rats</strong> can make <a
+                                                    href="/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=11">asthma</a>
+                                                and allergies worse.</li>
+                                            <li>The <strong>lack of an air conditioner</strong> places people at risk of
+                                                <a
+                                                    href="/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=100">death
+                                                    during hot weather</a>.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>As a result of the segregation and disinvestment caused by redlining,
+                                        <strong>Black and Latino people have less access to healthy housing</strong>.
+                                        They are more likely to live in buildings that have health-threatening
+                                        maintenance issues.
+                                    </P>
+
+                                    <hr>
+
+                                    <iframe title="" aria-label="Split Bars" id="datawrapper-chart-PTyc4"
+                                        src="https://datawrapper.dwcdn.net/PTyc4/2/" scrolling="no" frameborder="0"
+                                        style="width: 0; min-width: 100% !important; border: none;"
+                                        height="231"></iframe>
+                                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+                                    </script>
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-med float-right btn-light" data-toggle="modal"
+                            data-target="#hvsModal">Get the data</button>
+
+                    </div>
+                </div>
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+
+                <div class="row no-gutters">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2 id="section5" class="storyanchor">These disparities persist across income levels.
+                                </h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 pl-2">
+                                    <p>Black and Latino people have less access to healthy housing, but this isn’t due
+                                        to higher poverty rates in these populations.</P>
+                                    <p>Black and Latino people with higher incomes are also more likely to live in
+                                        buildings with serious maintenance issues - further suggesting that racism is
+                                        behind these disparities.</p>
+
+
+                                    <hr>
+                                    <div class="text-center mb-3">
+                                        View data by income level:<br>
+                                        <input type="radio" name="income" onclick="elow()" id="elow"
+                                            checked="checked"><label for="elow">&nbsp;Extremely low</label> &nbsp;
+                                        <input type="radio" name="income" onclick="vlow()" id="vlow" /><label
+                                            for="vlow">&nbsp;Very low</label> &nbsp;
+                                        <input type="radio" name="income" onclick="low()" id="low" /><label
+                                            for="low">&nbsp;Low</label> &nbsp;
+                                        <input type="radio" name="income" onclick="mod()" id="mod" /><label
+                                            for="mod">&nbsp;Moderate or higher</label> &nbsp;
+                                    </div>
+
+
+                                    <div id="ifElow" style="display:block">
+                                        <iframe title="" aria-label="Split Bars" id="datawrapper-chart-gOFSx"
+                                            src="https://datawrapper.dwcdn.net/gOFSx/1/" scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="231"></iframe>
+                                        <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+                                        </script>
+                                    </div>
+
+                                    <div id="ifVlow" style="display:none">
+                                        <iframe title="" aria-label="Split Bars" id="datawrapper-chart-pbMFA"
+                                            src="https://datawrapper.dwcdn.net/pbMFA/1/" scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="231"></iframe>
+                                        <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+                                        </script>
+                                    </div>
+
+                                    <div id="ifLow" style="display:none">
+                                        <iframe title="" aria-label="Split Bars" id="datawrapper-chart-yon1f"
+                                            src="https://datawrapper.dwcdn.net/yon1f/1/" scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="231"></iframe>
+                                        <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+                                        </script>
+                                    </div>
+
+                                    <div id="ifMod" style="display:none">
+                                        <iframe title="" aria-label="Split Bars" id="datawrapper-chart-rMOZd"
+                                            src="https://datawrapper.dwcdn.net/rMOZd/1/" scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="231"></iframe>
+                                        <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+                                        </script>
+                                    </div>
+
+
+                                    <script>
+                                        function elow() {
+                                            document.getElementById('ifElow').style.display = "block";
+                                            document.getElementById('ifVlow').style.display = "none";
+                                            document.getElementById('ifLow').style.display = "none";
+                                            document.getElementById('ifMod').style.display = "none";
+                                        }
+
+                                        function vlow() {
+                                            document.getElementById('ifElow').style.display = "none";
+                                            document.getElementById('ifVlow').style.display = "block";
+                                            document.getElementById('ifLow').style.display = "none";
+                                            document.getElementById('ifMod').style.display = "none";
+                                        }
+
+                                        function low() {
+                                            document.getElementById('ifElow').style.display = "none";
+                                            document.getElementById('ifVlow').style.display = "none";
+                                            document.getElementById('ifLow').style.display = "block";
+                                            document.getElementById('ifMod').style.display = "none";
+                                        }
+
+                                        function mod() {
+                                            document.getElementById('ifElow').style.display = "none";
+                                            document.getElementById('ifVlow').style.display = "none";
+                                            document.getElementById('ifLow').style.display = "none";
+                                            document.getElementById('ifMod').style.display = "block";
+                                        }
+                                    </script>
+                                    <hr>
+                                    <div class="my-3">
+                                        <p>These healthy housing problems can’t be fixed by a little bit of tidying up –
+                                            they stem from chronic neglect of maintenance by building management and
+                                            landlords, and old housing stock in disrepair after decades of
+                                            disinvestment.</p>
+                                        <p>And the disparities in access to healthy housing are related to real estate
+                                            practices that maintain segregation.</p>
+
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-med float-right btn-light" data-toggle="modal"
+                            data-target="#hvsModal">Get the data</button>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+
+
+
+
+
+
+                <div class="row no-gutters">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2>Racism and disinvestment show up in health data.</h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 px-2">
+                                    <p>Disinvestment in neighborhoods of color leads to housing disrepair which, in
+                                        turn, creates unhealthy homes. Disrepair, mold, and pests trigger asthma
+                                        attacks, sending children with asthma to hospitals - an often frightening
+                                        experience for both children and their caregivers.
+                                    </p>
+                                    <p>As a result, the highest rates of asthma emergency department visits for children
+                                        age 5 to 14 are in neighborhoods that are home largely to people of color.
+                                    </p>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                                role="tab" aria-controls="home" aria-selected="true">Bar charts</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                                role="tab" aria-controls="profile" aria-selected="false">Scatterplot</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <iframe title="" aria-label="Table" id="datawrapper-chart-LeCdQ"
+                                                src="//datawrapper.dwcdn.net/LeCdQ/3/" scrolling="no" frameborder="0"
+                                                style="width: 0; min-width: 100% !important; border: none;"
+                                                height="795"></iframe>
+                                            <script
+                                                type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <iframe title="" aria-label="chart" id="datawrapper-chart-XBLYk"
+                                                src="https://datawrapper.dwcdn.net/XBLYk/2/" scrolling="no"
+                                                frameborder="0"
+                                                style="width: 0; min-width: 100% !important; border: none;"
+                                                height="600"></iframe>
+                                            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+                                            </script>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-med float-right btn-light" data-toggle="modal"
+                            data-target="#asthmaModal">Get the data</button>
+
+
+                    </div>
+                </div>
+
+                <!-- Asthma Modal -->
+                <div class="modal fade" id="asthmaModal" tabindex="-1" role="dialog" aria-labelledby="asthmaModalTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="asthmaModalTitle">Get the data: Asthma and population</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Data on <a
+                                        href="/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=11">childhood
+                                        asthma emergency department visits</a> come from the New York State Statewide
+                                    Planning and Research Cooperative System (SPARCS) Deidentified Hospital Discharge
+                                    Data.</p>
+                                <p>Data on the <a
+                                        href="/IndicatorPublic/VisualizationData.aspx?id=2325,4466a0,109,Summarize">race/ethnicity
+                                        of people by neighborhood</a> come from the American Community Survey.</p>
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+
+
+
+                <div class="row no-gutters">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h2>A healthy home should be a right.</h2>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 px-2">
+                                    <p>A home in good repair is vital. It’s protection from the weather. It’s a place
+                                        for you to be safe. It’s a place where your family can grow and thrive.
+                                    </p>
+                                    <p>But a poorly maintained, unhealthy home can’t provide a truly safe haven.
+                                        Instead, it presents a dangerous environment.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-7 mx-auto">
+                        <h3 class="text-center">
+                            So how can we create a city in which race - and racism - doesn't determine whether you have
+                            an opportunity to stay healthy?</h3>
+                    </div>
+                </div>
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+
+
+
+
+
+                <div class="row no-gutters">
+                    <div class="col-lg-5 ml-auto panel-grid panel-grid-l">
+                        <h4>Policymakers and community advocates can support racial justice initiatives:</h4>
+                        <p>
+                        <ul>
+                            <li>Invest in neighborhoods harmed by a history of structural racism. Promote economic and
+                                educational equity and support <a href="https://wherewelive.cityofnewyork.us/">Where We
+                                    Live initiatives</a>.</li>
+                            <li>Support Department of Housing Preservation and Development initiatives aimed
+                                at rehabilitating older housing.</li>
+                        </ul>
+                        </P>
+
+                    </div>
+                    <div class="col-lg-5 mr-auto panel-grid">
+                        <img class="my-3" src="images/work.jpg" alt="Workers working on an apartment building.">
+
+                    </div>
+                </div>
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-5 ml-auto panel-grid">
+                        <img class="my-3" src="images/neighborhood.jpg" alt="a New York City neighborhood.">
+
+                    </div>
+                    <div class="col-lg-5 mr-auto panel-grid panel-grid-r">
+                        <h4>Tenants and homeowners can tap into systems that are here to support you:</h4>
+                        <p>
+                        <ul>
+                            <li>Report maintenance problems to your building's management. If your building manager
+                                doesn't address issues, call 311 to <a
+                                    href="https://www1.nyc.gov/nyc-resources/service/1950/residential-maintenance-complaint">file
+                                    a landlord maintenance complaint</a>.
+                            </li>
+                            <li>Get help if you need it: If you have been diagnosed with asthma and live in a home with
+                                mice or cockroaches, you may be eligible for a free home assessment by the Health
+                                Department’s <a
+                                    href="https://www1.nyc.gov/site/doh/health/health-topics/healthy-neighborhoods-asthma-triggers.page">Healthy
+                                    Neighborhoods Program</a>.
+                            </li>
+                            <LI>Take action for fair housing with <a href="https://wherewelive.cityofnewyork.us/">Where
+                                    We Live</a>.
+                            </LI>
+                        </ul>
+                        </P>
+
+                    </div>
+                </div>
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-5 ml-auto panel-grid panel-grid-l">
+                        <h4>Building owners and landlords should keep apartments safe and sanitary – it’s the law.</h4>
+                        <p>
+
+                        <ul>
+                            <li>Promptly fix problems that tenants report.
+                            </li>
+                            <li>Get rid of pests and mold, seal cracks, fix leaks, and improve garbage management.</li>
+                            <LI>Hire a good pest management professional that uses integrated pest management (IPM). For
+                                information on how to safely manage pests, see the Health Department’s <a
+                                    href="https://www1.nyc.gov/assets/doh/downloads/pdf/pesticide/ipm-toolkit.pdf">IPM
+                                    toolkit</a>.
+                            </LI>
+                        </ul>
+                        </P>
+
+                    </div>
+                    <div class="col-lg-5 mr-auto panel-grid">
+                        <img class="my-3" src="images/birdhouse.jpg" alt="A birdhouse outside an apartment building.">
+
+                    </div>
+                </div>
+
+                <div class="row no-gutters connector">
+                    <div class="col-1 ml-auto border-right-red"></div>
+                    <div class="col-1 mr-auto"></div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="redcard">
+                            <div class="redcard-title">
+                                <h3>More on environmental health and justice</h3>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 px-2">
+                                    <ul>
+                                        <li><a
+                                                href="/IndicatorPublic/Closerlook/redlining/Index.html">Redlining
+                                                in NYC</a></li>
+                                        <li><a
+                                                href="/IndicatorPublic/Closerlook/violence/index.html">Violence
+                                                as a public health issue</a></li>
+                                        <li><a href="/IndicatorPublic/HeatHub/hvi.html">Interactive
+                                                Heat Vulnerability Index</a></li>
+                                        <li><a
+                                                href="/IndicatorPublic/Closerlook/povasthma/index.html">Why
+                                                asthma is a social justice
+                                                issue</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!--end container-fluid-->
+
+
+
+
+        </main>
+
+        <!--MODAL CONTENT HERE-->
+
+
+
+
+
+        <footer class="bg-black" id="global-footer" role="contentinfo">
+
+            <h2 class="sr-only">
+                Page Footer
+            </h2>
+
+            <div class="bg-opacity-black-25 text-white" id="nyc-footer">
+
+                <div class="container py-3 d-none" id="languages">
+
+                    <div class="row fs-md">
+
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- #languages -->
+
+                <div class="container py-3" id="languages">
+
+                    <ul class="fs-md" role="list">
+                        <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                    </ul>
+
+                </div>
+                <!-- #languages -->
+
+                <hr class="opacity-10" aria-hidden="true">
+
+                <div class="container py-3">
+
+                    <div class="row">
+
+                        <div class="col-md-6 col-lg-8 mb-3 mb-lg-0">
+
+                            <nav class="row fs-md" role="navigation">
+
+                                <div class="col-lg mb-3 mb-lg-0">
+
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://www1.nyc.gov/nyc-resources/agencies.page">
+                                                <strong>City Agencies</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a858-nycnotify.nyc.gov/notifynyc/">
+                                                <strong>Notify NYC</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://www1.nyc.gov/connect/mobile-applications.page">
+                                                <strong>NYC Mobile Apps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- .col -->
+
+                                <div class="col-lg mb-3 mb-lg-0">
+
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="https://www1.nyc.gov/home/contact-us.page">
+                                                <strong>Contact NYC Government</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a856-citystore.nyc.gov/">
+                                                <strong>CityStore</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://maps.nyc.gov/doitt/nycitymap/">
+                                                <strong>Maps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- .col -->
+
+                                <div class="col-lg mb-3 mb-lg-0">
+
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://a127-ess.nyc.gov/psp/prdess/?cmd=login&languageCd=ENG&">
+                                                <strong>City Employees</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://www1.nyc.gov/connect/social-media.page">
+                                                <strong>Stay Connected</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://www1.nyc.gov/nyc-resources/resident-toolkit.page">
+                                                <strong>Resident Toolkit</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- .col -->
+
+                            </nav>
+
+                        </div>
+                        <!-- .col -->
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <a class="mb-2" href="https://www1.nyc.gov" title="Go to nyc.gov" target="_blank">
+                                <img class="mb-2"
+                                    src="https://nycehs.github.io/Portal-Core-Repo/images/nyc-bubble-logo.svg"
+                                    width="90" alt="NYC Logo">
+                            </a>
+                            <p class="fs-sm">City of New York - 2019 All Rights Reserved. NYC is a trademark and service
+                                mark of the City of New York.</p>
+
+                            <ul class="extensible-list horizontal fs-sm">
+                                <li>
+                                    <a class="text-reset" href="https://www1.nyc.gov/home/privacy-policy.page">Privacy
+                                        Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="https://www1.nyc.gov/home/terms-of-use.page">Terms
+                                        of Use</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="https://www1.nyc.gov/site/mopd/index.page"
+                                        title="Mayor's Office for People with Disabilities">
+                                        <span class="sr-only">Mayor's Office for People with Disabilities</span>
+                                        <span class="fab fa-lg fa-accessible-icon"></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- .col -->
+
+                    </div>
+                    <!-- .row -->
+
+                </div>
+                <!-- .container -->
+
+            </div>
+            <!-- #nyc-bottom-footer -->
+
+        </footer>
+
+    </body>
+    <!-- #content -->
+
+
+
+    <!-- jQuery (full, compressed version) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Popper.js and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <!-- Google Translate -->
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- NYC template JS (RTL, search and language toggle, back to top)  -->
+    <script src="https://nycehs.github.io/Portal-Core-Repo/js/main.js"></script>
+
+
+
+</body>
+
+</html>
