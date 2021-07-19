@@ -1,4 +1,8 @@
-# Closerlook-Deployment
-These are pre-deployment, launch-ready data stories. 
-Ensure that each HTML file has Google Analytics code and then copy whole folder to production server to promote.
-This Repo won't have a Github Pages site associated with it so that we don't have stories in development hitting our Google Analytics account every time we check our page. 
+# EH Data Portal Data Stories
+View [data stories](https://a816-dohbesp.nyc.gov/IndicatorPublic/Infographic.aspx) at the [EH Data Portal](https://a816-dohbesp.nyc.gov/IndicatorPublic/).
+
+These are launch ready pages. This repo contains the following branches:
+- main 
+- prototype-development: this branch is served via Github pages to deliver previews of prototypes
+- (development-DATASTORYNAME): these one-off branches are used to develop new data stories. Merge it into prototype-development to stage for preview. Then, add Google Analytics code, and merge it into main to prepare for deployment. 
+
