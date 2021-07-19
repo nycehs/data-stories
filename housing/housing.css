@@ -1,0 +1,91 @@
+.redcard {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left: 2px dotted #ff335f;
+    border-top: 2px dotted #ff335f;	
+    box-shadow: 10px 10px 5px 0px #dfdfdf;
+    background-color: #ffffff;
+    padding-bottom: 15px;
+}
+
+.redcard-title {
+    background-color: #fbd7de;
+    padding: 15px;
+    color: #991e39;
+    margin-bottom: 15px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #991e39!important;
+}
+
+
+.panel-grid-red {
+    padding: 10px!important;
+}
+
+.panel-grid {
+    padding: 10px!important;
+    background-color: #dcdcdc!important;
+}
+
+.panel-grid-l {
+    border-top: 2px dotted #757575;
+    border-left: 2px dotted #757575;
+    border-bottom: 2px dotted #757575;
+}
+
+.panel-grid-r {
+    border-top: 2px dotted #757575;
+    border-right: 2px dotted #757575;
+    border-bottom: 2px dotted #757575;
+}
+
+.connector {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 150px;
+}
+
+.border-right-red {
+    border-right: 2px dotted red;
+}
+
+
+.crossing-header-red {
+	background-color: #fbd7de;
+    padding: 15px;
+    border-left: 2px dotted #ff335f;
+    border-top: 2px dotted #ff335f;	
+
+}
+
+.content-red {
+    padding-left: 15px!important;
+    border-left: 2px dotted #ff335f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fffcfd;
+}
+
+.crossing-header-red h2 {
+	color: #991e39;
+}
+
+.crossing-header-red h3 {
+	color: #991e39;
+}
+
+.offset-sticky {
+	top: 60px;
+	z-index: -1;
+}
+
+.quote {
+	background-color: #f8eaff; 
+	padding-left: 25px; 
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

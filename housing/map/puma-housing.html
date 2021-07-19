@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draft Map</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script src="mapcd.js"></script>
+  <link href="map1.css" rel="stylesheet">
+  <style>.background {fill: transparent; stroke: transparent !important;}</style>
+</head>
+<body>
+
+<!--comment out 
+    <input type="radio" name="mainRadioGroup" value="PUMA" id="upuma"checked> <label for="upuma">No problems</label> 
+    <br>
+  <input type="radio" name="mainRadioGroup" value="CD" id="ucd"> <label for="ucd">3+ healthy housing problems</label> &nbsp;&nbsp;
+<br>
+<hr>
+old chooser-->
+
+View percent of homes with: 
+  <select id="problemsdropdown" name="problems">
+    <option value="heat">Heating breakdowns</option>
+    <option value="supplemtal">Supplemtal heat required</option>
+    <option value="rodents">Mice and rats</option>
+    <option value="cracks">Cracks and holes in interior walls</option>
+    <option value="broken">Broken plaster, peeling paint</option>
+    <option value="toilet">Toilet breakdown</option>
+    <option value="water">Water leaks</option>
+    <option value="ac">No air conditioning</option>
+    <option value="cockroaches">Cockroaches</option>
+    <hr>
+    <option value="noprob">No healthy housing problems</option>
+    <option value="three">3 or more healthy housing problems</option>
+
+  </select>
+
+
+
+  <div class="vis2" id="map"></div>
+
+
+</div>
+</body>
+</html>
