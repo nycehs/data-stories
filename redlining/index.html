@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Corrects IE Compatibility Mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>A brief history of redlining</title>
+
+    <!--
+    CSS is all hosted by the Core-Repo. Links will need to be updated for each project once merged or deployed.
+    This is also the case for main.js further below.
+    -->
+
+    <!--Fontawesome Icons-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/fontawesome/css/all.min.css">
+    <!--NYC Core Framework Theme-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/theme.css">
+    <!--Custom additions for Portal items-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/custom.css">
+
+
+    <!--Custom data story CSS-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/datastories.css">
+
+    <!--Google Analytics script - use only on Production-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28636785-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28636785-1');
+    </script>
+
+
+</head>
+
+
+<body>
+
+    <!-- For keyboard users -->
+    <a class="sr-only sr-only-focusable skip-menu" href="#sidebar">Skip Header</a>
+
+    <header id="global-header" role="banner">
+
+        <div class="bg-black text-white" id="nyc-top-header">
+
+            <div class="container-fluid wide">
+
+                <div class="row py-1 align-items-center justify-content-between">
+
+                    <div class="col-auto">
+                        <p class="d-none d-md-flex fs-md">
+                            <a class="text-reset" href="https://www1.nyc.gov/">
+                                <strong>nyc.gov</strong>
+                            </a>
+
+                        </p>
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-auto">
+
+                        <ul class="extensible-list horizontal fs-md">
+                            <li>
+                                <a class="text-reset" href="https://www1.nyc.gov/site/doh/index.page">
+                                    <strong>Department of Health</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www1.nyc.gov/" title="Go to nyc.gov">
+                                    <img class="d-block"
+                                        src="https://nycehs.github.io/Portal-Core-Repo/images/nyc-bubble-logo.svg"
+                                        width="45" alt="NYC Logo">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+
+            </div>
+            <!-- .container-fluid -->
+
+        </div>
+        <!-- #nyc-top-header -->
+
+        <div class="wrap-header">
+
+            <div class="container-fluid">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg py-2">
+                        <div class="d-flex justify-content-lg-start">
+                            <a class="align-self-center" href="#" title="Home">
+
+                                <!-- Placeholder logo, replace the following <svg> tag with your own image version -->
+                                <a href="/IndicatorPublic/Infographic.aspx">
+                                    <i class="fas fa-arrow-circle-left"></i>&nbsp;back to data stories
+                                </a>
+
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- .col -->
+
+                    <div class="col-lg-auto border-top border-lg-0">
+
+                        <div class="d-lg-flex align-items-center">
+
+                            <!-- Mobile Toggle Buttons -->
+
+                            <ul class="extensible-list horizontal justify-content-between my-2 d-lg-none">
+                                <li>
+                                    <button class="no-btn-style" type="button" data-toggle="collapse"
+                                        data-target="#global-language" aria-controls="global-language"
+                                        aria-expanded="false">
+                                        <span class="fas fa-language fa-lg"></span>
+                                    </button>
+                                </li>
+
+
+                            </ul>
+
+                            <div class="collapse d-lg-block mx-n2 mx-lg-2" id="nav-primary">
+
+                            </div>
+
+                            <!-- Desktop Toggle Buttons -->
+
+                            <ul class="extensible-list horizontal d-none d-lg-flex">
+                                <li>
+                                    <button class="no-btn-style" type="button" title="Language" data-toggle="collapse"
+                                        data-target="#global-language" aria-controls="global-language"
+                                        aria-expanded="false">
+                                        <span class="sr-only">Language</span>
+                                        <span class="fas fa-language fa-lg"></span>
+                                    </button>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <!-- .d-flex -->
+
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+
+            </div>
+            <!-- .container-fluid -->
+
+        </div>
+        <!-- .wrap-header -->
+
+        <div class="container-fluid border-top collapse" id="global-language">
+            <div class="narrow py-2">
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid border-top collapse" id="global-search">
+            <form class="narrow py-2" aria-label="Search" role="search">
+                <div class="input-group">
+                    <label class="sr-only" for="global-search-bar">Search</label>
+                    <input class="form-control form-control-lg" id="global-search-bar" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary btn-lg" type="button" title="Search">
+                            <span class="sr-only">Search</span>
+                            <span class="fas fa-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </header>
+    <!-- #global-header -->
+
+
+    <body class="scrollspy-container" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+        <main role="main">
+
+            <!-- Add your custom image class below -->
+            <div class="bg-primary d-flex flex-column titleslide"
+                style="height: 500px; background-image: URL(title1.jpg)">
+
+                <div class="container-fluid my-auto">
+                    <div class="narrow my-3">
+                        <h1 class="display-4 titleheader" id="section0">The 90-year-old financial policy that harms our
+                            health</h1>
+                    </div>
+                </div>
+                <!-- .container -->
+
+                <!-- Toggle #main-nav on mobile. Comment this out if there are no chapters -->
+
+                <div class="container-fluid d-xl-none d-lg-none">
+                    <div class="narrow">
+                        <div class="btn-toggle narrow">
+                            <button class="btn btn-block btn-lg btn-primary shadow" data-toggle="collapse"
+                                data-target="#main-nav" aria-expanded="false" aria-controls="sidebar-nav">
+                                <span class="title">Contents</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--#main-nav - remove this out if there are no chapters-->
+
+
+            <div class="sticky-top container-fluid collapse d-lg-block px-0 border-lg-top border-lg-bottom"
+                id="main-nav" style="background-color:white;">
+
+                <h2 class="sr-only">
+                    Primary Navigation
+                </h2>
+
+                <div class="">
+
+                    <nav class="nav nav-pills" role="navigation" id="myScrollspy">
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link active" href="#section0" id="nav-item-00" role="button">
+                                Introduction
+                            </a>
+
+
+                        </div>
+
+
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link" href="#section1" id="nav-item-01" role="button">
+                                Poverty, race, and health
+                            </a>
+
+
+                        </div>
+
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link" href="#section2" id="nav-item-02" role="button">
+                                A brief history of redlining
+                            </a>
+
+
+                        </div>
+
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link" href="#section3" id="nav-item-03" role="button">Redlining in NYC
+                            </a>
+                        </div>
+
+
+                        <div class="nav-item mx-auto">
+
+                            <a class="nav-link" href="#section4" id="nav-item-04" role="button">Its effects today
+                            </a>
+                        </div>
+
+
+                    </nav>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+            <article class="container-fluid" id="skip-header-target">
+
+                <div class="row">
+
+                    <div class="col-xl-2">
+
+
+                    </div>
+                    <!-- .col -->
+
+
+                    <!--start main content section-->
+                    <div class="col-xl-8 overflow-hidden fs-rg" id="primary-content">
+
+                        <div class="my-5">
+
+                            <div class="narrow my-4">
+
+                                <h2>Redlining in NYC</h2>
+                                <!--Introduction-->
+                                <p>In public health, we often cite structural racism
+                                    to help explain health patterns in our society. But what, specifically, does this
+                                    mean?
+                                    A close look at the history of redlining shows this connection.</p>
+
+                                <p>When we analyze data on the health of New Yorkers, we often find the same geographic
+                                    patterns,
+                                    with higher rates of preventable
+                                    health conditions in high-poverty neighborhoods. For example, <a
+                                        href="/IndicatorPublic/Closerlook/povasthma/index.html">we've
+                                        written about how asthma and poverty are closely connected</a>.
+                                </p>
+
+                                <p>These high-poverty neighborhoods are also home
+                                    to a higher proportion of people of color than other communities.</p>
+
+                                <p>The chart below shows the relationship between each neighborhood's poverty rate
+                                    and percent population of color, with the rate of
+                                    childhood asthma ED visits represented by the size of each bubble. </p>
+
+                            </div>
+
+
+                            <div class="medium storyanchor border-bottom" id="section1">
+                                <div class="border-top pt-2">
+                                    <iframe title="Race, poverty, and health are connected in NYC"
+                                        aria-label="Scatter Plot" id="datawrapper-chart-KOI8H"
+                                        src="//datawrapper.dwcdn.net/KOI8H/4/" scrolling="no" frameborder="0"
+                                        style="width: 0; min-width: 100% !important; border: none;"
+                                        height="500"></iframe>
+                                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();
+                                    </script>
+
+                                </div>
+                            </div>
+
+                            <div class="narrow my-4">
+
+
+                                <p>This dynamic extends beyond asthma. To understand why
+                                    poverty, race, and health are related in New York City, we look back at <span
+                                        style="font-weight: bold; color:#DF0E0E;">redlining</span>. This government
+                                    policy from the 1930s illustrates the nature of poverty and racism in our society -
+                                    and how racism
+                                    affects health.</p>
+
+                                <h2 class="storyanchor" id="section2">A brief history of <span
+                                        style="color:#DF0E0E">redlining</span></h2>
+                                <p>In the 1930s, during the Great Depression, unemployment rates were high and many
+                                    people couldn't make their mortgage payments. A wave of foreclosures swept the
+                                    country. To help keep people in their homes, the federal government established the
+                                    Home Owners Loan Corporation (HOLC). Its goal was to refinance mortgages with better
+                                    terms, like lower interest rates and longer repayment periods, to help people make
+                                    payments and avoid foreclosure.
+                                <p>
+                                <p>To determine what loans they would guarantee, HOLC sent people to appraise
+                                    neighborhoods in cities across the US. They documented the types of housing in
+                                    neighborhoods, along with information about the people who lived there. They also
+                                    catalogued “detrimental influences,” with racist
+                                    descriptions like
+                                    “infiltration of Negroes” and “mixed races" as characteristics that lowered a
+                                    neighborhood's
+                                    value.</p>
+                            </div>
+
+                            <div class="medium">
+                                <figure class="figure my-3 pt-2">
+                                    <img class="img-fluid" width="100%" src="redlinedoc1.png"
+                                        alt="A redlining document that details housing, construction type, average age, repair condition, occupancy, price range, and other information">
+                                    <figcaption class="figure-caption font-italic my-1">A redlining document that
+                                        details housing, construction type, average age, repair condition, occupancy,
+                                        price range, and other information</figcaption>
+                                </figure>
+
+                                <hr>
+
+                                <figure class="figure pb-2 border-bottom">
+                                    <img class="mt-2 img-fluid" width="100%" src="redlinedoc2.png"
+                                        alt="A redining document that reads: Detrimental influences: Obsolescence and poor maintenance. Infiltration of Negroes. Elevated structures on Lexington Ave & Fulton & Grand Avenue. Mixed races.">
+                                    <figcaption class="figure-caption font-italic my-1">A redining document that reads:
+                                        Detrimental influences: Obsolescence and poor maintenance. Infiltration of
+                                        Negroes. Elevated structures on Lexington Ave & Fulton & Grand Avenue. Mixed
+                                        races.</figcaption>
+                                </figure>
+                            </div>
+
+
+                            <div class="narrow my-4">
+
+                                <P class="mt-2">With this information, HOLC made “residential security maps” for almost
+                                    250 cities, including New York City. On these maps, HOLC gave each neighborhood a
+                                    classification:
+                                <ul style="list-style:none;">
+                                    <li><strong><span style="color:#4FCF23"><i class="fas fa-square-full"></i></span>
+                                            Best</strong></li>
+                                    <li><strong><span style="color:rgb(136, 145, 218)"><i
+                                                    class="fas fa-square-full"></i></span> Still desirable</strong></li>
+                                    <li><strong><span style="color:#e4eb83"><i class="fas fa-square-full"></i></span>
+                                            Definitely declining</strong></li>
+                                    <li><strong><span style="color:#DF0E0E"><i class="fas fa-square-full"></i></span>
+                                            Hazardous</strong></li>
+                                </ul>
+
+                                The government used these classifications to determine whether to guarantee loans. Banks
+                                used them to determine if people were eligible for mortgages, and wouldn't provide loans
+                                to buy homes in the "declining" or "hazardous" neighborhoods. </P>
+                                <p>This was <span style="font-weight: bold; color:#DF0E0E">redlining</span> - drawing
+                                    boundaries around neighborhoods based on residents' race and depriving them of
+                                    resources and opportunities - effectively racializing poverty in cities across the
+                                    U.S.. This is structural racism: where racism is built into the rules of society.
+                                </p>
+
+                                <p>The map below shows the extent of redlining in New York City.</p>
+                            </div>
+
+                            <div class="wide storyanchor" id="section3">
+                                <div class="py-2">
+                                    <iframe src="HOLC_map/HOLC_map.html" scrolling="no" frameborder="0"
+                                        style="position: relative; height: 600px; width: 100%;"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="narrow my-4">
+
+
+
+                                <h3>Redlining drove residential segregation</h3>
+                                <p>As a result of redlining, people of color were denied access to “desirable”
+                                    neighborhoods by racist real estate practices - and denied loans to buy homes in
+                                    neighborhoods labeled "declining" or "hazardous." Real estate agents also used
+                                    exploitative tactics like <a href="#bbcollapse" data-toggle="collapse"
+                                        class="badge badge-pill badge-warning">blockbusting</a>, <a
+                                        href="#contractcollapse" data-toggle="collapse"
+                                        class="badge badge-pill badge-warning">contract selling</a>, and <a
+                                        href="#rrccollapse" data-toggle="collapse"
+                                        class="badge badge-pill badge-warning">racially restrictive covenants</a>, to
+                                    deepen and enforce neighborhood segregation.</p>
+
+                                <div class="collapse fs-sm py-2 px-2 mb-2 mx-2" id="bbcollapse"
+                                    style="margin-top: 0px!important; background-color: #f9f9f9;">
+                                    <p><strong>Blockbusting</strong> was a practice used by real estate agents. Since
+                                        many white people viewed people of color as a social and economic threat to
+                                        their neighborhoods, agents would tell white homeowners that people of color
+                                        were about to move into the neighborhood. </p>
+                                    <p>This would convince homeowners that their house's value would fall - and they
+                                        would sell for a lower price. Real estate agents would then turn around and sell
+                                        property to people of color for inflated prices.</p>
+                                </div>
+                                <div class="collapse fs-sm py-2 px-2 mb-2 mx-2" id="contractcollapse"
+                                    style="background-color: #f9f9f9;">
+                                    <p><strong>Contract selling</strong> was a deceptive and exploitative real estate
+                                        practice that targeted people of color with private loans to buy homes. These
+                                        loans often had high interests rates and manipulative terms - in some cases,
+                                        forcing the buyer to give up their home if they missed even one loan payment.
+                                    </p>
+                                    <p>These contracts often made people responsible for paying back far more money than
+                                        the house they bought was worth. </p>
+                                </div>
+                                <div class="collapse fs-sm py-2 px-2 mb-2 mx-2" id="rrccollapse"
+                                    style="background-color: #f9f9f9;">
+                                    <p>A <strong>racially-restrictive covenant</strong> is a clause in the deed for a
+                                        property that prevents the owner from selling the property to people of color.
+                                    </p>
+                                    <p>Racially-restrictive covenants were a way to enforce residential segregation, to
+                                        ensure that people of color were kept out of white neighborhoods. </p>
+                                </div>
+
+                                <p>Owning a home is a powerful way to achieve financial stability. These policies
+                                    concentrated people of color in neighborhoods
+                                    deprived of investment and prevented them from accessing loans and buying property -
+                                    while while white residents were provided more resources and
+                                    opportunities.
+                                </p>
+
+                                <p>Enormous areas of New York City were redlined. Explore the extent of HOLC's redlining
+                                    in NYC's five boroughs:</p>
+                            </div>
+
+                            <div class="medium">
+                                <h4>Redlining in New York City</h4>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="manhattan-tab" data-toggle="tab"
+                                            href="#manhattan" role="tab" aria-controls="manhattan"
+                                            aria-selected="true">Manhattan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="bronx-tab" data-toggle="tab" href="#bronx" role="tab"
+                                            aria-controls="bronx" aria-selected="false">The Bronx</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="brooklyn-tab" data-toggle="tab" href="#brooklyn"
+                                            role="tab" aria-controls="brooklyn" aria-selected="false">Brooklyn</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="queens-tab" data-toggle="tab" href="#queens" role="tab"
+                                            aria-controls="queens" aria-selected="false">Queens</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="staten-tab" data-toggle="tab" href="#staten" role="tab"
+                                            aria-controls="staten" aria-selected="false">Staten island</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="map-tab" data-toggle="tab" href="#citywidemap"
+                                            role="tab" aria-controls="citywidemap" aria-selected="false">Citywide
+                                            Map</a>
+                                    </li>
+
+
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="manhattan" role="tabpanel"
+                                        aria-labelledby="manhattan-tab">
+                                        <br>
+                                        <iframe title="Redlining in Manhattan" aria-label="Stacked Bars"
+                                            id="datawrapper-chart-8RvsX" src="//datawrapper.dwcdn.net/8RvsX/4/"
+                                            scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="426"></iframe>
+                                        <script
+                                            type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+                                        <br><br>
+                                        <p>Large parts of Manhattan were redlined. However, reinvestment in recent
+                                            decades has lead to rising property values and the displacement of some
+                                            former residents. Neighborhoods that were once redlined now have some of the
+                                            city's most expensive real estate. </p>
+
+                                    </div>
+
+                                    <div class="tab-pane fade" id="bronx" role="tabpanel" aria-labelledby="bronx-tab">
+                                        <br>
+                                        <iframe title="Redlining in the Bronx" aria-label="Stacked Bars"
+                                            id="datawrapper-chart-kO9TQ" src="//datawrapper.dwcdn.net/kO9TQ/4/"
+                                            scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="426"></iframe>
+                                        <script
+                                            type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+                                        <br><br>
+                                        <p>As with Manhattan, huge swaths of residential neighborhoods in the Bronx were
+                                            declared "declining" or "hazardous" in HOLC's redlining map. Unlike
+                                            Manhattan, though, the Bronx has not seen the same level of reinvestment and
+                                            redevelopment,and poverty rates remain high. </p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="brooklyn" role="tabpanel"
+                                        aria-labelledby="brooklyn-tab">
+                                        <br>
+                                        <iframe title="Redlining in Brooklyn" aria-label="Stacked Bars"
+                                            id="datawrapper-chart-9oZ0R" src="//datawrapper.dwcdn.net/9oZ0R/4/"
+                                            scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="570"></iframe>
+                                        <script
+                                            type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+                                        <br><br>
+                                        <p>Brooklyn also saw extensive redlining that lead to deep disinvestment and
+                                            generations of poverty.</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="queens" role="tabpanel" aria-labelledby="queens-tab">
+                                        <br>
+                                        <iframe title="Redlining in Queens" aria-label="Stacked Bars"
+                                            id="datawrapper-chart-eAlbF" src="//datawrapper.dwcdn.net/eAlbF/4/"
+                                            scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="474"></iframe>
+                                        <script
+                                            type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+                                        <br><br>
+                                        <p>Queens saw significantly less redlining than other boroughs.</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="staten" role="tabpanel" aria-labelledby="staten-tab">
+                                        <br>
+                                        <iframe title="Redlining in Staten Island" aria-label="Stacked Bars"
+                                            id="datawrapper-chart-n8cgy" src="//datawrapper.dwcdn.net/n8cgy/4/"
+                                            scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="210"></iframe>
+                                        <script
+                                            type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+                                        <br><br>
+                                        <p>Like Queens, Staten Island saw much less redlining than other boroughs.</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="citywidemap" role="tabpanel"
+                                        aria-labelledby="map-tab">
+                                        <iframe title="Aggressive redlining of the Bronx, Brooklyn, and Manhattan"
+                                            aria-label="USA new york city community districts choropleth map"
+                                            id="datawrapper-chart-4Vuf4" src="//datawrapper.dwcdn.net/4Vuf4/4/"
+                                            scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="500"></iframe>
+                                        <script
+                                            type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+
+                                    </div>
+
+
+
+
+
+                                </div>
+                                <hr>
+                            </div>
+
+
+
+
+
+
+                            <div class="narrow my-4">
+
+                                <h2 class="storyanchor" id="section4">Redlining's effects continue today</h2>
+                                <p>In New York City, many once-thriving neighborhoods experienced severe disinvestment
+                                    as a result of redlining, which caused inequality that continued from one generation
+                                    to the
+                                    next. Neighborhoods that were redlined in the 1930s have higher rates of poverty
+                                    even today – nearly 90 years after the maps were created. According to the <a
+                                        href="https://ncrc.org/holc/">National Community Reinvestment Coalition</a>, 3
+                                    out of every 4 neighborhoods in the USA that were redlined in the 1930s are still
+                                    low-to-moderate income today - and 2 out of every 3 are predominantly populated by
+                                    people of color. </p>
+
+
+                                <p>Redlining is a prime example of
+                                    <a href="#disinvestmentCollapseTwo" data-toggle="collapse"
+                                        class="badge badge-pill badge-warning">neighborhood disinvestment</a>: denying
+                                    or withholding public and private funding, city services, or other resources that
+                                    neighborhoods - and their residents - need to thrive. When these resources are
+                                    withheld, it creates <a href="https://www.who.int/hdp/poverty/en/">"environments
+                                        that
+                                        make [people] sick"</a>.
+                                </p>
+
+                                <div class="collapse py-2 px-2 mx-2 fs-sm" id="disinvestmentCollapseTwo"
+                                    style="margin-top: 0px!important; background-color: #f9f9f9;">
+                                    <p><strong>Disinvestment</strong> can be:
+                                    <ul>
+                                        <li>Denying people loans to buy homes - like through <span
+                                                style="font-weight: bold; color:#7e0000">redlining</span> and other
+                                            well-documented racist real estate practices</li>
+                                        <li>Housing neglect by landlords, leading to unhealthy housing</li>
+                                        <li>A decline in public funding for housing, schools, and other vital services
+                                        </li>
+                                        <li>Fewer job opportunities and lower-paying jobs</li>
+                                        <li>Emphasis on policing over pro-social resources</li>
+                                    </ul>
+                                    </p>
+                                </div>
+
+                                <p>Policies like redlining show us
+                                    that poverty isn't a bit of bad luck, inability to find a good job, or not working
+                                    hard enough. Poverty is deeper and more
+                                    powerful: generations of deprivation and disinvestment withholding resources,
+                                    opportunity, wealth, and health from people and neighborhoods - often, driven by
+                                    racism. </p>
+
+                                <p>Though redlining was banned in 1968, other forms of housing discrimination persist.
+                                    But redlining was special: because
+                                    of how it worsened poverty and segregation in cities across the United States,
+                                    leaving a legacy of income and racial
+                                    disparities in health outcomes.</p>
+
+                                <p>Public health is about far more than changing people's behaviors
+                                    at the individual level: it's about building a society that supports health and
+                                    well-being, and moving into our future by confronting the past.</p>
+
+
+                            </div>
+
+
+                            <!-- .narrow -->
+
+                            <footer class="narrow my-4" id="article-footer">
+
+                                <div class="border-top border-dark">
+
+                                    <ul class="extensible-list horizontal text-muted mt-3">
+
+                                        <li>
+                                            <a class="text-muted" href="mailto:trackingportal@health.nyc.gov"
+                                                title="Share through email">
+                                                <span class="fa fa-envelope"></span> Questions about this data story?
+                                                Ideas for another one? Email us.</a>
+
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- .narrow -->
+
+                            </footer>
+                            <!-- #article-footer -->
+
+                        </div>
+                        <!-- .my-5 -->
+
+                    </div>
+                    <!-- .col -->
+
+
+                    <!--right-hand column for extra resources and links-->
+                    <div class="col-xl-2 border-xl-left">
+
+                        <div class="narrow py-3 mt-n3 mt-xl-0 sticky-top" style="z-index: 0;">
+                            <br><br>
+                            <p>Related data stories:</p>
+                            <p><a href="/IndicatorPublic/Closerlook/housing/index.html">Health,
+                                    housing,
+                                    and history</a></p>
+
+                            <p><a href="/IndicatorPublic/Closerlook/violence/index.html">Why
+                                    violence is
+                                    a public health issue</a></p>
+
+                            <hr>
+                            <p>Read more:</p>
+                            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=4/36.71/-96.93&opacity=0.8">Mapping
+                                Inequality: Redlining in New Deal America</a>, where you can explore redlining maps and
+                            original documents for your neighborhood.
+                            <hr>
+                            <a href="https://ncrc.org/holc/">The persistent structure of segregation and economic
+                                inequality</a> from the National Community Reinvestment Coalition.
+
+
+
+                        </div>
+                        <!-- .my-3 -->
+
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+
+            </article>
+            <!-- #primary-content -->
+
+        </main>
+
+        <footer class="bg-black" id="global-footer" role="contentinfo">
+
+            <h2 class="sr-only">
+                Page Footer
+            </h2>
+
+            <div class="bg-opacity-black-25 text-white" id="nyc-footer">
+
+                <div class="container py-3 d-none" id="languages">
+
+                    <div class="row fs-md">
+
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- #languages -->
+
+                <div class="container py-3" id="languages">
+
+                    <ul class="fs-md" role="list">
+                        <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                    </ul>
+
+                </div>
+                <!-- #languages -->
+
+                <hr class="opacity-10" aria-hidden="true">
+
+                <div class="container py-3">
+
+                    <div class="row">
+
+                        <div class="col-md-6 col-lg-8 mb-3 mb-lg-0">
+
+                            <nav class="row fs-md" role="navigation">
+
+                                <div class="col-lg mb-3 mb-lg-0">
+
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://www1.nyc.gov/nyc-resources/agencies.page">
+                                                <strong>City Agencies</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a858-nycnotify.nyc.gov/notifynyc/">
+                                                <strong>Notify NYC</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://www1.nyc.gov/connect/mobile-applications.page">
+                                                <strong>NYC Mobile Apps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- .col -->
+
+                                <div class="col-lg mb-3 mb-lg-0">
+
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="https://www1.nyc.gov/home/contact-us.page">
+                                                <strong>Contact NYC Government</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a856-citystore.nyc.gov/">
+                                                <strong>CityStore</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://maps.nyc.gov/doitt/nycitymap/">
+                                                <strong>Maps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- .col -->
+
+                                <div class="col-lg mb-3 mb-lg-0">
+
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://a127-ess.nyc.gov/psp/prdess/?cmd=login&languageCd=ENG&">
+                                                <strong>City Employees</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://www1.nyc.gov/connect/social-media.page">
+                                                <strong>Stay Connected</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://www1.nyc.gov/nyc-resources/resident-toolkit.page">
+                                                <strong>Resident Toolkit</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- .col -->
+
+                            </nav>
+
+                        </div>
+                        <!-- .col -->
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <a class="mb-2" href="https://www1.nyc.gov" title="Go to nyc.gov" target="_blank">
+                                <img class="mb-2" src="./images/nyc-bubble-logo.svg" width="90" alt="NYC Logo">
+                            </a>
+                            <p class="fs-sm">City of New York - 2019 All Rights Reserved. NYC is a trademark and service
+                                mark of the City of New York.</p>
+
+                            <ul class="extensible-list horizontal fs-sm">
+                                <li>
+                                    <a class="text-reset" href="https://www1.nyc.gov/home/privacy-policy.page">Privacy
+                                        Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="https://www1.nyc.gov/home/terms-of-use.page">Terms
+                                        of Use</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="https://www1.nyc.gov/site/mopd/index.page"
+                                        title="Mayor's Office for People with Disabilities">
+                                        <span class="sr-only">Mayor's Office for People with Disabilities</span>
+                                        <span class="fab fa-lg fa-accessible-icon"></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- .col -->
+
+                    </div>
+                    <!-- .row -->
+
+                </div>
+                <!-- .container -->
+
+            </div>
+            <!-- #nyc-bottom-footer -->
+
+        </footer>
+
+    </body>
+    <!-- #content -->
+
+
+
+    <!-- jQuery (full, compressed version) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Popper.js and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <!-- Google Translate -->
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- NYC template JS (RTL, search and language toggle, back to top)  -->
+    <script src="https://nycehs.github.io/Portal-Core-Repo/js/main.js"></script>
+
+
+
+</body>
+
+</html>
