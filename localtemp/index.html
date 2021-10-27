@@ -29,6 +29,16 @@
     <!--Custom data story CSS-->
     <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/datastories.css">
 
+        <!--Google Analytics script - use only on Production-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28636785-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-28636785-1');
+        </script>
+
 </head>
 
 <style>
@@ -464,12 +474,6 @@
                                 </div>
 
 
-
-
-
-
-
-
                                 <h3 class="mt-2">What cools your block?</h3>
                                 <p>Anyone who has looked for a shady spot under a tree on a hot sunny day knows that trees help to cool off a street. 
                                 </p>
@@ -486,8 +490,6 @@
                                 </p>
 
                                 <p>We reviewed land-use data and satellite imagery to build a profile of each block where we were monitoring temperature. We found that temperature could vary significantly depending on block characteristics. For example, the block we studied in Brownsville, Brooklyn, had very little vegetation (trees, grass, and shrubs), while the block in Edenwald, in the Bronx, had high grass and tree coverage. You can see the difference in vegetation coverage in these satellite images.</p>
-
-
 
                             <!-- <div class="wide fs-md">
                                 <div class="row pb-2 border-bottom">
@@ -533,10 +535,6 @@
                                 </div>
 
                             </div> -->
-
-
-
-
 
                                 <p>We found that the average temperature at the Edenwald spot was more than 2° cooler than the Brownsville spot.</p>
                             </div>
@@ -850,6 +848,7 @@
 
                                 <h3>What factors matter the most?</h3>
                                 <p>We built a statistical model that predicts the average summer temperature on a hypothetical city block, based on the neighborhood factors we studied in the hyperlocal temperature study? We modeled the average temperature from 6 to 9PM, when the Urban Heat Island Effect is the greatest (the sun sets, but the city retains heat).
+
                                 </p>
 
                                 <p>Our model looked at how much each factor affected temperature, and it showed that the most important factor for reducing temperature was green space: trees, grass, and shrubs reduce temperature. Having more surfaces that hold heat increases temperature. 
@@ -947,7 +946,9 @@
                                 </p>
                                 <p>You can explore the areas where we measured temperatures, and their average
                                     summer
-                                    temperature, using the map below.</p>
+                                    temperature, using the map below.<ul>
+                                        <li><a href="https://data.cityofnewyork.us/browse?q=Temperature+">Download data at Open Data</a></li>
+                                    </ul></p>
                                 
                                     </div>
 
